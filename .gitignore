@@ -1,0 +1,77 @@
+# --- Build outputs ---
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+[Aa]rtifacts/
+out/
+publish/
+
+# --- Visual Studio / VS Code ---
+.vs/
+.vscode/
+*.code-workspace
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# --- JetBrains Rider / ReSharper ---
+.idea/
+*.sln.iml
+*.[Rr]e[Ss]harper
+_ReSharper.Caches/
+*.DotSettings.user
+*.resharper.user
+
+# --- Test outputs ---
+TestResult*/
+TestResults/
+*.coverage
+*.coveragexml
+*.trx
+
+# --- NuGet / Packages / Symbols ---
+packages/
+*.nupkg
+*.snupkg
+*.symbols.nupkg
+
+# --- Logs / Traces ---
+*.log
+*.svclog
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Local settings (keep appsettings.json tracked) ---
+appsettings.*.local.json
+appsettings.Local.json
+appsettings.*.override.json
+# .NET User Secrets live outside repo, nothing to ignore here
+
+# --- Databases (dev/local) ---
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+# --- Environment files ---
+.env
+.env.*
+
+# --- Optional: large ML models (uncomment if nechceš verzovat) ---
+# models/**/*.onnx
+# models/**/*.bin
+# models/**/*.pt
+
+# --- Misc ---
+*.pidb
+*.pdb
+*.perf
+*.psess
+*.vsp
+*.vspx
