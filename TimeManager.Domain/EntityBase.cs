@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 namespace TimeManager.Domain
 {
     // Bazova entita pro vsechny domenove tridy
-    public class EntityBase
+    public abstract class EntityBase
     {
         // Unikatni identifikator entity
         [Key]
