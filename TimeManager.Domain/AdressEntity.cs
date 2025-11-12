@@ -7,6 +7,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TimeManager.Domain
 {
+    public enum AdressType
+    {
+        Home,
+        Work,
+        Other
+    }
     public class AdressEntity : EntityBase
     {
         // Ulice
@@ -36,5 +42,9 @@ namespace TimeManager.Domain
         // Stat
         [Required, MaxLength(100)]
         public string Country { get; set; } = null!;
+
+        // Typ adresy
+        [Required]
+        public AdressType Type { get; set; }
     }
 }
