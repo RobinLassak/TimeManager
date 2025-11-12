@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TimeManager.Application\TimeManager.Application.csproj" />
+  </ItemGroup>
+
 </Project>

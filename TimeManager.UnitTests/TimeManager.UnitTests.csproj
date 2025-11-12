@@ -17,6 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TimeManager.Application\TimeManager.Application.csproj" />
+    <ProjectReference Include="..\TimeManager.Domain\TimeManager.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 
