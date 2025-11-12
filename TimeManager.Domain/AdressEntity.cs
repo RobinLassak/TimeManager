@@ -46,5 +46,9 @@ namespace TimeManager.Domain
         // Typ adresy
         [Required]
         public AdressType Type { get; set; }
+
+        // Popis adresy
+        [MaxLength(400)]
+        public string? Description { get; set; }
     }
 }
