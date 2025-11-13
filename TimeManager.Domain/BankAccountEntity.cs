@@ -14,6 +14,11 @@ namespace TimeManager.Domain
         public string Name { get; set; } = null!;
 
 
+        // Vlastnik uctu
+        [Required]
+        public PersonEntity Owner { get; set; } = null!;
+
+
         // Predcisli uctu
         [MaxLength(6)]
         public string? AccountPrefix { get; set; }

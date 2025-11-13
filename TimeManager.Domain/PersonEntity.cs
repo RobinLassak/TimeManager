@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TimeManager.Domain
 {
-    public abstract class PersonBaseEntity : EntityBase
+    public class PersonEntity : EntityBase
     {
         // Jmeno
         [Required, MaxLength(50)]
@@ -22,6 +22,22 @@ namespace TimeManager.Domain
         // Datum narozeni
         public DateTime? DateOfBirth { get; set; }
 
-        
+
+        // Spolecnost
+        public CompanyEntity? Company { get; set; }
+
+
+        // Adresy
+        public List<AdressEntity> Addresses { get; set; } = new();
+
+
+        // Kontakty
+        public List<ContactEntity> Contacts { get; set; } = new();
+
+
+        // Bankovni ucty
+        public List<BankAccountEntity> BankAccounts { get; set; } = new();
+
+
     }
 }

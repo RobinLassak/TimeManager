@@ -6,17 +6,8 @@ using System.Threading.Tasks;
 
 namespace TimeManager.Domain
 {
-    public class CustomerEntity : PersonBaseEntity
+    public class CustomerEntity : PersonEntity
     {
-        // Firma zakaznika
-        public CompanyEntity? Company { get; set; }
-
-
-        // Seznam kontaktu
-        public List<ContactEntity> Contacts { get; set; } = new();
-
-
-        // Seznam adres
-        public List<AdressEntity> Addresses { get; set; } = new();
+        
     }
 }

@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TimeManager.Domain
 {
-    public class EmployeeEntity : PersonBaseEntity
+    public class EmployeeEntity : PersonEntity
     {
         // Uzivatelske jmeno
         [MaxLength(100)]
