@@ -7,6 +7,7 @@ class Work(models.Model):
     description = models.TextField(blank=True)
     start_date = models.DateField()
     end_date = models.DateField()
+    status = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
