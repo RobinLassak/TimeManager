@@ -71,6 +71,4 @@ class CustomerService:
             phone = customerDTO.phone,
             website = customerDTO.website,
             id = customerDTO.id,
-            created_at = customerDTO.created_at,
-            updated_at = customerDTO.updated_at,
         )
